@@ -11,16 +11,17 @@
     function addDefaults(defaults, isDebugging, cb) {
         defaults.title = "Glen Park School";
         defaults.hostname = "www.glenparkpto.org";
-        defaults.stylesheets = ["less/tailor.less"];
+        defaults.stylesheets = ["less/glenpark.less"];
         [
-            "js/twitter.js",
             "js/glenpark.js",
+            "js/gpmenu.js",
             "js/home.js" // home has the default route and must be loaded right after login
         ].forEach(function (dir) {
                 defaults.trailingScripts.push(dir);
             });
         [
-            path.join(templates, "home.html")
+            path.join(templates, "home.html"),
+            path.join(templates, "gpmenu.html")
         ].forEach(function (dir) {
                 defaults.templateFiles.push(dir);
             });
@@ -37,6 +38,7 @@
                 defaults.manifest.push(file);
             });
         defaults["public"].unshift(pubdir);
+        defaults.manifest.push("gps.jpg");
         defaults.googleAnalyticsWebPropertyID = "UA-3602945-1";
 
         return cb(undefined, defaults);
