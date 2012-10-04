@@ -39,6 +39,7 @@
                 defaults.manifest.push(file);
             });
         [
+            "http://connect.facebook.net/en_US/all.js#xfbml=1",
             "img/festival1.jpg",
             "img/festival2.jpg",
             "img/festival3.jpg"
