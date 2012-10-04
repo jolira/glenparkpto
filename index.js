@@ -17,12 +17,14 @@
             "js/glenpark.js",
             "js/gpmenu.js",
             "js/home.js",
+            "js/calendar.js",
             "js/contact.js"
         ].forEach(function (dir) {
                 defaults.trailingScripts.push(dir);
             });
         [
             path.join(templates, "home.html"),
+            path.join(templates, "calendar.html"),
             path.join(templates, "contact.html"),
             path.join(templates, "gpmenu.html")
         ].forEach(function (dir) {
