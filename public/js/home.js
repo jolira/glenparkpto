@@ -3,18 +3,12 @@
 
     var View = Backbone.View.extend({
         template:app.utils.template("script[id='home']"),
-        initialize:function () {
-            this.views = [];
-        },
-        close:function () {
-            _.each(this.views, function (view) {
-                view.close();
-            });
-        },
         events:{
         },
         render:function () {
             this.$el.html(this.template({})).addClass("home");
+            this.$('.carousel').carousel();
+
             return this;
         }
     });

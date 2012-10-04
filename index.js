@@ -13,6 +13,7 @@
         defaults.hostname = "www.glenparkpto.org";
         defaults.stylesheets = ["less/glenpark.less"];
         [
+            "js/bootstrap-carousel.js",
             "js/glenpark.js",
             "js/gpmenu.js",
             "js/home.js" // home has the default route and must be loaded right after login
@@ -37,8 +38,15 @@
         ].forEach(function (file) {
                 defaults.manifest.push(file);
             });
+        [
+            "img/festival1.jpg",
+            "img/festival2.jpg",
+            "img/festival3.jpg"
+        ].forEach(function(file) {
+            defaults.manifest.push(file);
+        });
         defaults["public"].unshift(pubdir);
-        defaults.manifest.push("gps.jpg");
+        defaults.htmlFiles.push(path.join(templates, "facebook.html"));
         defaults.googleAnalyticsWebPropertyID = "UA-3602945-1";
 
         return cb(undefined, defaults);
