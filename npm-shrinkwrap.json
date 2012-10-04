@@ -6,7 +6,7 @@
       "version": "0.1.1",
       "dependencies": {
         "mocha": {
-          "version": "1.5.0",
+          "version": "1.6.0",
           "dependencies": {
             "commander": {
               "version": "0.6.1"
@@ -24,6 +24,9 @@
             },
             "diff": {
               "version": "1.0.2"
+            },
+            "debug": {
+              "version": "0.7.0"
             },
             "mkdirp": {
               "version": "0.3.3"
@@ -48,7 +51,7 @@
               "version": "0.4.0"
             },
             "underscore": {
-              "version": "1.4.0"
+              "version": "1.4.1"
             },
             "xml2js": {
               "version": "0.1.14",
@@ -118,7 +121,7 @@
       }
     },
     "site-manager-baseline": {
-      "version": "0.10.2",
+      "version": "0.10.3",
       "dependencies": {
         "socket.io": {
           "version": "0.9.10",
@@ -130,7 +133,7 @@
                   "version": "1.2.5"
                 },
                 "ws": {
-                  "version": "0.4.21",
+                  "version": "0.4.22",
                   "dependencies": {
                     "commander": {
                       "version": "0.6.1"
@@ -324,7 +327,7 @@
                   "version": "0.4.0"
                 },
                 "underscore": {
-                  "version": "1.4.0"
+                  "version": "1.4.1"
                 },
                 "xml2js": {
                   "version": "0.1.14",
@@ -391,7 +394,7 @@
           "version": "0.1.1",
           "dependencies": {
             "mocha": {
-              "version": "1.5.0",
+              "version": "1.6.0",
               "dependencies": {
                 "commander": {
                   "version": "0.6.1"
