@@ -16,12 +16,14 @@
             "js/bootstrap-carousel.js",
             "js/glenpark.js",
             "js/gpmenu.js",
-            "js/home.js" // home has the default route and must be loaded right after login
+            "js/home.js",
+            "js/contact.js"
         ].forEach(function (dir) {
                 defaults.trailingScripts.push(dir);
             });
         [
             path.join(templates, "home.html"),
+            path.join(templates, "contact.html"),
             path.join(templates, "gpmenu.html")
         ].forEach(function (dir) {
                 defaults.templateFiles.push(dir);
@@ -39,6 +41,8 @@
                 defaults.manifest.push(file);
             });
         [
+            "img/mail.jpg",
+            "img/list.gif",
             "img/festival1.jpg",
             "img/festival2.jpg",
             "img/festival3.jpg"
