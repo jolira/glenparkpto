@@ -47,8 +47,8 @@
             defaults.manifest.push(file);
         });
         defaults["public"].unshift(pubdir);
-        //defaults.htmlFiles.push(path.join(templates, "facebook.html"));
-        //defaults.googleAnalyticsWebPropertyID = "UA-3602945-1";
+        defaults.htmlFiles.push(path.join(templates, "facebook.html"));
+        defaults.googleAnalyticsWebPropertyID = "UA-3602945-1";
 
         return cb(undefined, defaults);
     }
